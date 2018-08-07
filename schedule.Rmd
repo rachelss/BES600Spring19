@@ -60,3 +60,29 @@ kable(datacontent, "html") %>%
   kable_styling(bootstrap_options = c("striped", "hover", "responsive"))
 ```
 
+## Complementary ecology concepts
+
+Note: Concepts in ecology will be reinforced by analyzing ecological data. It is assumed that you have studied the underlying concepts in BIO 262.
+
+```{r}
+Week <- c(rep("1-4",3), rep("5-7",3), rep("8-10",3), rep("11-13",3))
+Item <- c("Question", "Concepts", "System")
+Content <- c("How do nutrient cycling rates of fish in lakes scale with body size and temperature?",
+             "Nutrient cycling, Allometry, Metabolism, Genetic variation",
+             "Aquatic ecosystems and fish (vertebrates)",
+             "How do primary productivity and growth rates of kelp vary among seasons, years, and sites?",
+             "Primary productivity, Population growth",
+             "Marine ecosystems and kelp (algae)",
+             "What are the effects of invasive species on a native aquatic community?",
+             "Food webs, Predation, Competition, Population dynamics, Direct and indirect effects",
+             "Aquatic ecosystems; Amphibians and fish (vertebrates), snails and Daphnia (invertebrates), algae",
+             "What are the effects of plant diversity on ecosystem productivity?",
+             "Diversity, Ecosystem function, Nutrient cycling",
+             "System: Grassland ecosystems and plants")
+
+ecology <- cbind(Week,Item,Content)
+
+kable(ecology, "html") %>%  
+  kable_styling(bootstrap_options = c("striped", "hover", "responsive")) %>%
+  collapse_rows(columns = 1)
+```
