@@ -1,0 +1,14 @@
+---
+title: "BIO 263 URI Fall 2018"
+subtitle: "Ecological Data Analysis"
+author: "Instructor: Rachel Schwartz"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: cosmo
+---
+# Overview
+
+# Meeting times

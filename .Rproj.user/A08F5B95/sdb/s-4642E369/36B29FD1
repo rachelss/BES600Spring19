@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "## README\n\nThis site was made following http://www.storybench.org/convert-google-doc-rmarkdown-publish-github-pages/\n\nUse rmarkdown::render(\"index.Rmd\") for each Rmd file instead of knit",
+    "created" : 1533657312989.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2276857309",
+    "id" : "36B29FD1",
+    "lastKnownWriteTime" : 1533657390,
+    "last_content_update" : 1533657390851,
+    "path" : "~/Desktop/URI/teaching/BIO263/BIO263_Fall18/Readme.md",
+    "project_path" : "Readme.md",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

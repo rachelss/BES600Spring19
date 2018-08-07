@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Schedule\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\n    toc_float: true\n    theme: cosmo\n---\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = FALSE)\nlibrary(kableExtra)\n```\n\n## Data Content\n\n```{r, warning=FALSE}\nWeek <- c(1:13)\nContent <- c(\"Using R: loading data, exploring data and data types, working with variables\",\n             \"Variation among samples, basic graphing in R including scatter plots\",\n             \"Summary statistics including mean and variance; \n             Calculating summary statistics for subsets of data in R\",\n             \"Drawing conclusions from graphs and summary statistics\",\n             \"Variance, boxplots, median, quartiles, histogram\",\n             \"Comparing samples using a t-test\",\n             \"Drawing conclusions from boxplots and statistical tests\",\n             \"Experimental design\",\n             \"Standard error, standard deviation, and confidence intervals\",\n             \"Hypothesis testing\",\n             \"Correlation and regression\",\n             \"ANOVA\",\n             \"Conclusions from correlation, regression, and ANOVA\")\n\ndatacontent <- cbind(Week,Content)\n\nkable(datacontent, \"html\") %>%  \n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"responsive\"))\n```\n",
+    "created" : 1533656672485.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2851108534",
+    "id" : "C6070C4E",
+    "lastKnownWriteTime" : 1533658255,
+    "last_content_update" : 1533658255995,
+    "path" : "~/Desktop/URI/teaching/BIO263/BIO263_Fall18/schedule.Rmd",
+    "project_path" : "schedule.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

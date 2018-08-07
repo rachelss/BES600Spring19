@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"BIO 263 URI Fall 2018\"\nsubtitle: \"Ecological Data Analysis\"\nauthor: \"Instructor: Rachel Schwartz\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\n    toc_float: true\n    theme: cosmo\n---\n# Overview\n\n# Meeting times\n",
+    "created" : 1533656523738.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "679108347",
+    "id" : "A5A1518F",
+    "lastKnownWriteTime" : 1533657239,
+    "last_content_update" : 1533657239804,
+    "path" : "~/Desktop/URI/teaching/BIO263/BIO263_Fall18/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

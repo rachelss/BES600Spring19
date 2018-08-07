@@ -1,0 +1,11 @@
+name: "BIO 263 URI Fall 2018"
+output_dir: "."
+navbar:
+  title: "BIO 263 URI Fall 2018"
+  left:
+    - text: "Overview"
+      href: index.html
+    - text: "Syllabus"
+      href: syllabus.html
+    - text: "Weekly schedule"
+      href: schedule.html

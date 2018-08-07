@@ -1,0 +1,38 @@
+---
+title: "Schedule"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: cosmo
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
+```
+
+## Data Content
+
+```{r, warning=FALSE}
+Week <- c(1:13)
+Content <- c("Using R: loading data, exploring data and data types, working with variables",
+             "Variation among samples, basic graphing in R including scatter plots",
+             "Summary statistics including mean and variance; 
+             Calculating summary statistics for subsets of data in R",
+             "Drawing conclusions from graphs and summary statistics",
+             "Variance, boxplots, median, quartiles, histogram",
+             "Comparing samples using a t-test",
+             "Drawing conclusions from boxplots and statistical tests",
+             "Experimental design",
+             "Standard error, standard deviation, and confidence intervals",
+             "Hypothesis testing",
+             "Correlation and regression",
+             "ANOVA",
+             "Conclusions from correlation, regression, and ANOVA")
+
+datacontent <- cbind(Week,Content)
+
+kable(datacontent, "html") %>%  
+  kable_styling(bootstrap_options = c("striped", "hover", "responsive"))
+```
