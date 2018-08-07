@@ -19,7 +19,7 @@ Week <- c(1:13)
 Ecology <- c(rep("Physical Environment", 4),
              rep("Population Ecology", 3),
              rep("Community Ecology", 3),
-             rep("Ecosystem Ecology"),3)
+             rep("Ecosystem Ecology",3))
 Topic <- c("Sampling", "Variation, Graphing", "Summary Statistics", "Writeup",
            "Variation, Graphing", "Sample comparisons", "Writeup", "Experimental design", "Variation, Graphing",
            "Hypothesis testing", "Variation, Graphing", "Hypothesis testing", "Writeup")

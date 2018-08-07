@@ -1,0 +1,33 @@
+---
+title: "Policies"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: cosmo
+---
+
+Classroom Protocol
+• Bring your laptop to class every day.
+• Be prepared to discuss data, results, and/or assigned readings.
+• Be kind to others. Remember that people have di erent backgrounds and experiences with the material. Students who learn the material faster should consider helping others (teaching is an excellent way to improve your understanding of the material).
+• If you must come in late, please do not disrupt the class. Please ensure all cell phones, pagers, and other electronic devices are set to silent.
+• Students are expected to come to class. Work on assignments will be done in class. If you are unable to attend due to illness, severe weather, religious holiday, personal or family emergency, or sanctioned University event please let me know as soon as possible to arrange assistance in learning the material to complete the assignment.
+
+Instructor Policies
+• If you need to miss class for any sanctioned reason (e.g. religious holiday, University- sanctioned event, serious illness, accident, personal tragedy, disability) please contact me in advance if possible to make alternate arrangements. If you miss class for an unsanctioned reason please discuss this with me to determine whether arrangements can be made. If the reason is too personal to discuss with me please discuss options with your academic advisor or simply let me know that something personal has come up.
+• Students are expected to treat faculty and fellow classmates with dignity and respect. Students are responsible for being familiar with and adhering to the published “Stu- dent Code of Conduct” which can be accessed in the University Student Handbook (http://web.uri.edu/studentconduct/student-handbook/).
+• Any student with a documented disability should contact me as soon as possible so that we may arrange reasonable accommodations. As part of this process, please be in touch with Disability Services for Students Office at 330 Memorial Union, 401-874-2098 (http://www.uri.edu/disability/dss/).
+• Students are expected to be honest in all academic work. A student’s name on any written work, quiz or exam shall be regarded as assurance that the work is the result of the student’s own independent thought and study. Work should be stated in the student’s own words, properly attributed to its source. Students have an obligation to know how to quote, paraphrase, summarize, cite and reference the work of others with integrity. The following are examples of academic dishonesty.
+– Using material, directly or paraphrasing, from published sources (print or electronic) without appropriate citation
+– Claiming disproportionate credit for work not done independently
+– Unauthorized possession or access to exams
+– Unauthorized communication during exams
+– Unauthorized use of another’s work or preparing work for another student
+– Taking an exam for another student
+– Altering or attempting to alter grades
+– The use of notes or electronic devices to gain an unauthorized advantage during exams
+– Fabricating or falsifying facts, data or references
+– Facilitating or aiding another’s academic dishonesty
+– Submitting the same paper for more than one course without prior approval from the instructors.

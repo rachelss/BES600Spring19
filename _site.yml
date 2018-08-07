@@ -5,7 +5,9 @@ navbar:
   left:
     - text: "Overview"
       href: index.html
-    - text: "Syllabus"
-      href: syllabus.html
+    - text: "About"
+      href: details.html
+    - text: "Policies"
+      href: policies.html
     - text: "Weekly schedule"
       href: schedule.html
