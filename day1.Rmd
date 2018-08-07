@@ -1,0 +1,17 @@
+---
+title: "Day 1 - in class"
+output: 
+  html_document:
+    toc: false
+    theme: cosmo
+---
+
+**What parameter(s) are you trying to estimate?**
+
+**What is the target population you are interested in?**
+
+**What samples can you use to estimate the parameter(s)?**
+
+**Do you expect each sample to provide an accurate estimate of the parameter(s) of interest? Why or why not?**
+
+**What are the explanatory and response variables in this dataset? Are they categorical or numerical? Discrete or continuous?**
