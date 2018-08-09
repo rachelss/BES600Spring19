@@ -20,37 +20,36 @@ Ecology <- c(rep("Physical Environment", 4),
              rep("Population Ecology", 3),
              rep("Community Ecology", 3),
              rep("Ecosystem Ecology",3))
-Topic <- c("Sampling", "Variation, Graphing", "Summary Statistics", "Writeup",
+Topic <- c("Sampling", "Variation, Graphing", "Models", "Writeup",
            "Variation, Graphing", "Sample comparisons", "Writeup", "Experimental design", "Variation, Graphing",
            "Hypothesis testing", "Variation, Graphing", "Hypothesis testing", "Writeup")
 Data <- c(rep("Fish metabolism", 4), rep("Kelp Populations", 3),
           rep("Aquatic invasives", 3), rep("Grassland productivity", 3))
-Reading <- c("p. 1-16", "p. 25-43", "p. 65-73", "p. 23-24", "p. 43-46", "p. 73-80, 338-340",
-             "p. 176-177", "p. 423-435", "p. 96-107", "p. 149-167, 115-116", "p. 503-512, 539-547",
-             "p. 459-473", "p. 201-202")
+Reading <- c("p. 1-16", "p. 23-43", "p. 539-547", "p. 149-167", 
+             "p. 43-46", "p. 73-80, 338-340", "p. 176-177", 
+             "p. 423-435", "p. 96-107", "p.65-73, 115-116", 
+             "p. 503-512", "p. 459-473", "p. 201-202")
  
 meetings <- cbind(Week, Ecology, Topic, Data, Reading)
 
 kable(meetings, "html") %>%  
   kable_styling(bootstrap_options = c("striped", "hover", "responsive"))
-
 ```
 
 ## Data Content
 
 ```{r, warning=FALSE}
-Content <- c("Using R: loading data, exploring data and data types, working with variables",
-             "Variation among samples, basic graphing in R including scatter plots",
-             "Summary statistics including mean and variance; 
-             Calculating summary statistics for subsets of data in R",
-             "Drawing conclusions from graphs and summary statistics",
+Content <- c("Introduction to ecological data",
+             "Using R, exploring data, sample variation, basic graphing",
+             "Correlation and regression",
+             "Summary statistics including mean and variance",
+             "Drawing conclusions from graphs and models",
              "Variance, boxplots, median, quartiles, histogram",
              "Comparing samples using a t-test",
              "Drawing conclusions from boxplots and statistical tests",
              "Experimental design",
              "Standard error, standard deviation, and confidence intervals",
              "Hypothesis testing",
-             "Correlation and regression",
              "ANOVA",
              "Conclusions from correlation, regression, and ANOVA")
 
