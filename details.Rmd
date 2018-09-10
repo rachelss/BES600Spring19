@@ -20,7 +20,7 @@ library(kableExtra)
 **Email**: rsschwartz@uri.edu  
 Please note that I will do my best to respond promptly between 9-5 on weekdays.
 
-**Office Hours**: 1 hour / week TBD  
+**Office Hours**: T 2-3pm and W 3-4 pm    
 Please feel free to come by without an appointment during this time. To talk with me during other times please set up a meeting by email.
 
 **Class Days / Time**: M 3-4pm Coastal Institute (Kingston) 117A
