@@ -435,6 +435,7 @@ $(document).ready(function () {
 <li><p>Annual NPP is correlated with the annual rate of kelp growth (i.e. the amount of new kelp mass produced per unit of existing kelp mass).</p></li>
 <li><p>FSC is correlated with growth rate (due to high densities resulting in reduced light availability).</p></li>
 </ol>
+<p><strong>Stop and think about the null hypotheses before proceeding</strong></p>
 </section>
 <section id="data" class="level2">
 <h2>Data</h2>
@@ -467,7 +468,7 @@ $(document).ready(function () {
 <section id="convert-the-record_date-column-to-a-useful-date" class="level3">
 <h3>Convert the record_date column to a useful date</h3>
 <pre class="r"><code>macrocystis_density$record_date &lt;- mdy(macrocystis_density$record_date)</code></pre>
-<p>**Repeat this converstion for the dates in other datasets*</p>
+<p><strong>Repeat this converstion for the dates in other datasets</strong></p>
 </section>
 <section id="are-there-differences-in-the-growth-rate-dry-mass-among-sites" class="level3">
 <h3>Are there differences in the growth rate (dry mass) among sites?</h3>

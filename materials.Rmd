@@ -16,3 +16,5 @@ knitr::opts_chunk$set(echo = TRUE)
 [Exercise 1 data](https://tinyurl.com/yc72k45p)
 
 [Exercise 2](day2.html)  
+
+[Exercise 3](day3.html)  
