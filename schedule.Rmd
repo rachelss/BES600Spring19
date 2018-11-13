@@ -16,19 +16,20 @@ library(kableExtra)
 
 ```{r, warning=FALSE}
 Week <- c(1:13)
-Ecology <- c(rep("Physical Environment", 4),
-             rep("Population Ecology", 3),
+Ecology <- c(rep("Physical Environment", 5),
+             rep("Population Ecology", 4),
              rep("Community Ecology", 3),
-             rep("Ecosystem Ecology",3))
-Topic <- c("Sampling", "Variation, Graphing", "Models", "Writeup",
-           "Variation, Graphing", "Sample comparisons", "Writeup", "Experimental design", "Variation, Graphing",
-           "Hypothesis testing", "Variation, Graphing", "Hypothesis testing", "Writeup")
-Data <- c(rep("Fish metabolism", 4), rep("Kelp Populations", 3),
-          rep("Aquatic invasives", 3), rep("Grassland productivity", 3))
-Reading <- c("p. 1-16", "p. 23-43", "p. 539-547", "p. 149-167", 
-             "p. 43-46", "p. 73-80, 338-340", "p. 176-177", 
-             "p. 423-435", "p. 96-107", "p.65-73, 115-116", 
-             "p. 503-512", "p. 459-473", "p. 201-202")
+             rep("Ecosystem Ecology",1))
+Topic <- c("Intro","Sampling", "Variation, Graphing", "Models", "Writeup",
+           "Variation, Graphing", "Statistics", "Models", "Writeup",
+           "Experimental design", "Data management", "Models",
+           "Wrapup")
+Data <- c(rep("Fish metabolism", 5), rep("Kelp Populations", 4),
+          rep("Aquatic invasives", 3), rep("Grassland productivity", 1))
+Reading <- c("", "p. 1-16", "p. 23-43", "p. 539-547", "p. 149-167", 
+             "p. 43-46", "p. 65-73, 96-107", "p. 73-80, 338-340", "p. 176-177",
+             "p. 423-445", "p. 459-473", "p. 115-116", 
+             "p. 503-512, 201-202")
  
 meetings <- cbind(Week, Ecology, Topic, Data, Reading)
 
@@ -64,7 +65,7 @@ kable(datacontent, "html") %>%
 Note: Concepts in ecology will be reinforced by analyzing ecological data. It is assumed that you have studied the underlying concepts in BIO 262.
 
 ```{r}
-Week <- c(rep("1-4",3), rep("5-7",3), rep("8-10",3), rep("11-13",3))
+Week <- c(rep("1-5",3), rep("6-9",3), rep("10-12",3), rep("13",3))
 Item <- c("Question", "Concepts", "System")
 Content <- c("How do nutrient cycling rates of fish in lakes scale with body size and temperature?",
              "Nutrient cycling, Allometry, Metabolism, Genetic variation",
