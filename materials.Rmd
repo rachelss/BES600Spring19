@@ -17,4 +17,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [Exercise 2](day2.html)  
 
-[Exercise 3](day3.html)  
+[Exercise 3](day3.html)
+
+[Exercise 4](day4.html)

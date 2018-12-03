@@ -1,0 +1,10 @@
+---
+title: "Exercise 4"
+output: 
+  html_document:
+    toc: false
+    theme: cosmo
+---
+
+```{r child = '../Konza/konza.Rmd'}
+```
