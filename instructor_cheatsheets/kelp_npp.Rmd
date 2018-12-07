@@ -1,0 +1,240 @@
+---
+title: "What influences primary production in giant kelp?"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+#knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, results= 'hide',  fig.show = 'hide' )
+```
+
+## Background
+
+*The following is excerpted from Reed et al. 2008 (Ecology)*
+
+Primary production by photosynthetic organisms provides the energetic and material basis for the vast majority of life on earth (Lieth and Whittaker 1975). Most ecological studies of primary production have focused on "net primary production" (NPP), which is that portion of gross primary production from photo- synthesis that remains after plant respiration. Temporal and spatial variation in NPP in many systems has been causally linked to meteorological variables that influence the availability of water, nutrients, and light, which frequently limit plant growth (Brylinsky and Mann 1973, Runyon et al. 1994, Jobbagy and Sala 2000, Knapp and Smith 2001). Disturbance may also affect plant growth (and hence NPP) by altering resource availability (Sprugel 1985, McNaughton et al. 1989, Hobbs and Mooney 1995, Knapp et al. 1998).
+
+Submarine forests of giant kelp (*Macrocystis pyrifera*) offer a promising system for field-based investigations of the relative importance of vegetation dynamics and growth rate to interannual variation in NPP. Not only are giant kelp forests believed to be one of the most productive systems on earth (Mann 2000), but frequent disturbance from a variety of sources causes substantial temporal and spatial variation in the standing crop of giant kelp at both local and regional scales (Graham et al. 1997, Dayton et al. 1999, Edwards 2004). Our knowledge of the environmental processes that control growth in *Macrocystis* is derived largely from short-term studies of small juvenile plants (Dean and Jacobsen 1984) and of individual blades and stipes of large mature plants (van Tussenbroek 1989, Brown et al. 1997, Hepburn and Hurd 2005). Data from such studies are difficult to extrapolate to entire populations that have spatially and temporally variable age and size structures. 
+
+In this study we documented patterns of temporal variation in NPP of *Macrocystis* at three kelp forests in southern California over 4.5 years. We measured the vital rates underlying NPP (i.e., growth, biomass loss, and recruitment) and the extent to which variation in them was influenced by abiotic factors. We used these data to determine the relative contributions of disturbance- driven fluctuations in FSC and resource-driven fluctuations in rates of recruitment and growth to variation in annual NPP of giant kelp. 
+
+## Hypotheses
+
+1. Annual net primary production (NPP, i.e. the amount of new kelp mass produced per unit area of ocean bottom) is correlated with foliar standing crop (FSC, i.e. the density of actively growing plant mass) at the start of the growth year (hereafter initial FSC).
+
+2. Annual NPP is correlated with the density of plants that recruit during the year.
+
+3. Annual NPP is correlated with the annual rate of kelp growth (i.e. the amount of new kelp mass produced per unit of existing kelp mass). 
+
+4. FSC is correlated with growth rate (due to high densities resulting in reduced light availability).
+
+**Stop and think about the null hypotheses before proceeding**
+
+## Data
+
+* Data for this study were collected at three kelp forests located off the coast of Santa Barbara, California, USA: Mohawk Reef, Arroyo Burro, and Arroyo Quemado.
+* Data was collected from 2002 - 2006
+* For each plant monthly field measurements were made of the numbers of total and new fronds from June to December
+* Wet mass, dry mass, carbon mass, and nitrogen mass were measured or calculated (using conversion factors derived for each sampling date) 
+* Monthly field measurements were made for plant density, and loss rates of plants and fronds
+* For each site / year / season the following were calculated:
+  - The seasonal rate of biomass production in units of wet mass, dry mass, carbon mass, nitrogen mass
+  - The seasonal growth rate in each unit
+
+## Exercise
+
+Note that code is not provided for commands that have been provided previously. Refer to prior exercises if necessary.
+
+### Load packages `tidyverse` and `lubridate`
+
+```{r l}
+library(tidyverse)
+library(lubridate)
+```
+
+### Load data and view it
+
+The data can be found at the following paths relative to your home folder:  
+"../shared/macrocystis_variation_production.csv"  
+"../shared/macrocystis_variation_density.csv"  
+"../shared/macrocystis_variation_fronds.csv"  
+
+```{r load}
+macrocystis_prod <- read.csv('macrocystis_variation_production.csv')
+macrocystis_density <- read.csv('macrocystis_variation_density.csv')
+macrocystis_fronds <- read.csv('macrocystis_variation_fronds.csv')
+```
+
+### Convert the record_date column to a useful date
+
+```{r conv_dates, echo = TRUE}
+macrocystis_density$record_date <- mdy(macrocystis_density$record_date)
+```
+
+**Repeat this converstion for the dates in other datasets**
+
+```{r conv_dates2}
+macrocystis_fronds$record_date <- mdy(macrocystis_fronds$record_date)
+```
+
+### Are there differences in the growth rate (dry mass) among sites?
+
+Plot growth as a function of site using a boxplot to show variation
+
+```{r}
+ggplot(data = macrocystis_prod, aes(x = site, y = growth_rate_dry)) + 
+  geom_boxplot()
+```
+
+To better visualize the distribution of the data add a layer to your plot to show all the data points.
+
+```{r}
+ggplot(data = macrocystis_prod, aes(x = site, y = growth_rate_dry)) + 
+  geom_boxplot() + geom_point(alpha=.2)
+```
+
+To make the points lighter add `alpha=0.2` as a parameter in your point layer.
+  
+### Are there differences in seasonal cycles in growth among sites?
+
+Add `color = season` to your aes() to plot the seasons separately.
+
+```{r}
+ggplot(data = macrocystis_prod, aes(x = site, y = growth_rate_dry, color=season)) + 
+  geom_boxplot() + geom_point(alpha=.4,position=position_jitterdodge())
+```
+
+To place the points in the right location add `position=position_jitterdodge()` as a parameter in your point layer.
+
+### How does the foliar standing crop (FSC) of giant kelp (Macrocystis pyrifera) at the three study sites change over time? 
+
+Make a line plot of `fsc_dry` as a function of `record_date`. Set the parameter `color` equal to `site`. Include points with your lines.
+
+```{r, echo = TRUE}
+ggplot(data=macrocystis_density, aes(x=record_date, y=fsc_dry, color=site))+
+  geom_point()+geom_line() 
+```
+
+Add a line for the mean for each site.
+
+(1) Calculate the mean `fsc_dry` for each site (hint: filter the data for one site first).
+(2) Add a line layer to the plot with `geom_hline`. Set the yintercept argument to a list containing the three means.
+
+```{r, echo = TRUE}
+mean_ABUR <- mean(filter(macrocystis_density,site == 'ABUR')$fsc_dry)
+```
+
+```{r}
+mean_AQUE <- mean(filter(macrocystis_density,site == 'AQUE')$fsc_dry)
+mean_MOHK <- mean(filter(macrocystis_density,site == 'MOHK')$fsc_dry)
+```
+
+```{r, echo = TRUE}
+ggplot(data=macrocystis_density, aes(x=record_date, y=fsc_dry, color=site))+
+  geom_point()+geom_line()+ 
+  geom_hline(yintercept = c(mean_ABUR,mean_AQUE,mean_MOHK),
+             color=c("red","green","blue"))
+
+```
+
+### How do recruitment rates differ among sites and over time?
+
+Recruitment is measured as `new_fronds`. Note that fronds are measured per plant at each date. What do you want to plot and how will you calculate this?  
+
+```{r, echo = TRUE}
+new_fronds <- macrocystis_fronds %>% 
+  group_by(site,record_date) %>%
+  summarise(new_fronds = sum(new_fronds))
+```
+
+**Why does this give you some weird answers and how will you correct this?**
+
+```{r}
+new_fronds <- macrocystis_fronds %>% filter(new_fronds > 0) %>%
+  group_by(site,record_date) %>%
+  summarise(new_fronds = sum(new_fronds))
+```
+
+**Now you can plot**
+
+```{r}
+ggplot(new_fronds, aes(x=record_date,y=new_fronds,color=site))+geom_line()
+```
+
+### How do plant loss rates differ among sites and years?
+```{r}
+
+ggplot(data=macrocystis_density, aes(x=record_date, y=plant_loss_rate, color=site))+
+  geom_point()+geom_line()+ 
+  scale_x_date(date_breaks = "6 months")+
+  theme(axis.text.x=element_text(angle = 45, hjust = 1))
+
+```
+
+### How do loss rates of fronds differ among sites and years?
+
+```{r}
+
+ggplot(data=macrocystis_density, aes(x=record_date, y=frond_loss_rate, color=site))+
+  geom_point()+geom_line()
+
+```
+
+```{r, include=FALSE}
+frond_loss <- macrocystis_density %>% 
+  mutate(month = month(record_date)) %>%
+  group_by(month,site) %>% 
+  summarise(N = length(frond_loss_rate),
+            mean_frond_loss_rate = mean(frond_loss_rate),
+            se_frond_loss_rate = sd(frond_loss_rate)/sqrt(N))
+
+ggplot(data=macrocystis_density, aes(x=month(record_date), y=frond_loss_rate, group=month(record_date), color=site))+
+  geom_boxplot()
+
+ggplot(frond_loss, aes(x=month, y=mean_frond_loss_rate,color=site))+
+   geom_errorbar(aes(ymin=mean_frond_loss_rate-se_frond_loss_rate, 
+                     ymax=mean_frond_loss_rate+se_frond_loss_rate),
+                 width=.1, 
+                 position=position_dodge(0.1)) + # move them .05 to the left and right
+    geom_line(position=position_dodge(0.1)) +
+    geom_point(position=position_dodge(0.1))
+
+```
+
+### What is the average growth rate of giant kelp (dry-mass in kg/m/day)?
+```{r}
+mean(macrocystis_prod$growth_rate_dry)
+```
+
+### Is annual NPP related to the annual rate of kelp growth?
+*hint 1: you need to summarise annual NPP and growth and plot*  
+*hint 2: you need the linear model related to your plot*
+
+```{r}
+#NPP is the seasonal rate of biomass production in kg/m2/d
+annual_npp <- macrocystis_prod %>% group_by(year,site) %>% 
+  summarise(annual_npp = mean(npp_dry), annual_growth = mean(growth_rate_dry))
+ggplot(annual_npp, aes(annual_growth,annual_npp))+geom_point()
+summary(lm(annual_npp$annual_npp ~ annual_npp$annual_growth))
+```
+
+### Is annual NPP related to FSC at the start of the growth year (initial FSC)?
+```{r, include = FALSE}
+#the start of the growth year was set as the winter solstice (12/21) 
+#since this is when FSC is near its minimum 
+
+min_fsc <- macrocystis_density %>% filter(month(record_date) == 12) %>%
+  mutate(year = year(record_date)+1) %>%
+  select(site, year, fsc_dry)
+annual_npp_fsc <- inner_join(annual_npp,min_fsc)
+
+ggplot(annual_npp_fsc, aes(fsc_dry,annual_npp))+geom_point()
+summary(lm(annual_npp_fsc$annual_npp ~ annual_npp_fsc$fsc_dry))
+```
+
+```{r, include = FALSE}
+### Are rates of frond loss and plant loss at each site related to the density of plants at the site prior to the loss?
+### Is annual NPP related to the density of plants that recruit during the year?
+### How are growth rates related to FSC? expect negative
+
+```
