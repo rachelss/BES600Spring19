@@ -426,23 +426,18 @@ Briggs, John M. and Alan K. Knapp. 1995. Interannual Variability in Primary Prod
 <div id="hypotheses" class="section level2">
 <h2>Hypotheses</h2>
 <ol style="list-style-type: decimal">
-<li>interannual variability in aboveground biomass is greater on uplands than on lowlands, and greater in burned than on unburned sites<br />
-</li>
-<li>aboveground biomass in upland sites with shallow soils is more strongly related to precipitation than in lowland sites</li>
+<li><p>Plant productivity is impacted by (a) burn frequency, (b) soil depth and type (related to topography), and (c) precipitation.</p></li>
+<li><p>Plant productivity is impacted by the interaction of burn frequency, soil, and precipitation. For example, productivity may be impacted differently by precipitation in different soil types, and burning may have a different impact on productivity in different soil types.</p></li>
 </ol>
-<div id="rationale" class="section level3">
-<h3>Rationale</h3>
-<p>Uplands are more likely limited by water than lowlands, in which case, tallgrass prairie uplands may respond to variability in precipitation more like the shortgrass steppe (Sala et al., 1988). Burned sites are more limited by water than are unburned sites (Knapp et al., 1993).</p>
+<ul>
+<li>Uplands are more likely limited by water than lowlands, in which case, tallgrass prairie uplands may respond to variability in precipitation more like the shortgrass steppe (Sala et al., 1988). Burned sites are more limited by water than are unburned sites (Knapp et al., 1993).</li>
+</ul>
 <ol start="3" style="list-style-type: decimal">
-<li><p>The addition of soil moisture data strengthens the relationship between aboveground biomass and meteorological variables.</p></li>
-<li><p>Relationships between aboveground biomass and soil moisture in annually burned sites are stronger than in unburned sites because light or temperature may be the most important limiting resources to NPP in unburned prairie</p></li>
-<li><p>Interannual variability in forb biomass is more strongly related to precipitation compared to the dominant grasses.</p></li>
+<li>Different vegetation components (grasses and forbs) respond differently to burning and/or precipitation.</li>
 </ol>
-</div>
-<div id="rationale-1" class="section level3">
-<h3>Rationale</h3>
-<p>Forbs (C3 plants) have lower water use efficiency than C4 grasses.</p>
-</div>
+<ul>
+<li>Forbs (C3 plants) have lower water use efficiency than C4 grasses.</li>
+</ul>
 </div>
 <div id="study-location" class="section level2">
 <h2>Study location</h2>
@@ -492,18 +487,18 @@ Briggs, John M. and Alan K. Knapp. 1995. Interannual Variability in Primary Prod
 <p>Total productivity is the sum of the productivity of grasses and forbs. Make a table of total productivity for each Year-Location-Burn type combination.</p>
 <p>Now plot productivity over time for each burn type. You will probably want to separate by upland v. lowland. Use the <a href="http://www.cookbook-r.com/Graphs/Facets_(ggplot2)/"><code>facet_grid</code></a> layer to create separate graphs based on a variable.</p>
 <p>Make sure to fix your axis labels and make the y-axis start at 0 to avoid misleading your reader.</p>
-<p>Because there seems to be a general pattern in the data, average across all years to compare productivity among the three burn treatments using each sample as a replicate.</p>
-<p>First you’ll need a summary table containing the average and standard error of productivity across all sites for each burn treament. Standard error is calculated as <code>sd(total_prod)/sqrt(n())</code>.</p>
+<p>Because there seems to be a general pattern in the data, average across all years to compare productivity among the three burn treatments using each sample as a replicate. Make a summary table containing the average and standard error of productivity across all sites for each burn treament. Standard error is calculated as <code>sd(total_prod)/sqrt(n())</code>. Plotting mean and standard error will allow you to compare results between treatments.</p>
 <p>For your plot use the additional layer <code>geom_errorbar(aes(ymin=prod-se, ymax=prod+se))</code>.</p>
-<p>Use an ANOVA to determine whether the three treatments are statistically different.</p>
-<p>The treatments are statistically different but burning doesn’t explain a lot of the variation among sites. Take a look at the overall variation with a boxplot.</p>
-<p>Does the pattern you see hold for both forbs and grasses separately? You’ll need an additional summary table similar to the one above, but with separate rows by type.</p>
+<p>Use an ANOVA to determine whether the three treatments are statistically different. Make sure to use the table with samples not your calculated means.</p>
+<p>The treatments are statistically different but burning doesn’t explain a lot of the variation among sites. Take a look at the overall variation with a boxplot (use your total productivity table with samples and not mean/se information).</p>
+<p>Does the pattern you see hold for both forbs and grasses separately? You’ll need an additional summary table similar to the one above, but with separate rows by type generated from the original data.</p>
 <p>To test for the significance of both burn treatment and plant type on productivity use a two-way ANOVA with interaction effect. Replace <code>Burned</code> with <code>Burned*Type</code> and use the original dataset where productivity from different types are separate. Using <code>Burned*Type</code> tests for the significant effects of each variable separately and their interaction (which you observed from the graph).</p>
 </div>
 <div id="impacts-of-precipitation" class="section level3">
 <h3>Impacts of precipitation</h3>
 <p>What is the relationship between total annual precipitation (mm) and NPP for all sites on Konza Prairie? Use both a plot and linear model.</p>
 <p>Because there’s a lot of variation for any value of precipitation you can examine the effects of location and burn treatment using color and facets.</p>
+<p>Use a regression to examine the relationships you see in your graph.</p>
 </div>
 </div>
 

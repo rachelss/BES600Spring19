@@ -45,36 +45,22 @@ American Journal of Botany 82: 1024-1030.
  Gibson, 1989). 
 
 ## Hypotheses
-1) Interannual variability in
- aboveground biomass is greater on uplands than
- on lowlands, and greater in burned than on unburned
- sites  
- 2) aboveground biomass in upland sites
- with shallow soils is more strongly related to precipitation than in lowland sites 
- 
-### Rationale
-Uplands are
+1) Plant productivity is impacted by (a) burn frequency, (b) soil depth and type (related to topography), and (c) precipitation.
+
+2) Plant productivity is impacted by the interaction of burn frequency, soil, and precipitation. For example, productivity may be impacted differently by precipitation in different soil types, and burning may have a different impact on productivity in different soil types. 
+
+  - Uplands are
  more likely limited by water than lowlands, in which case,
  tallgrass prairie uplands may respond to variability in
  precipitation more like the shortgrass steppe (Sala et al.,
  1988). 
 Burned sites are more limited by
  water than are unburned sites (Knapp et al., 1993). 
- 
-3) The addition of soil moisture data strengthens the relationship between
- aboveground biomass and meteorological variables.
- 
-4) Relationships between aboveground biomass and soil moisture in annually
- burned sites are stronger than in unburned sites
- because light or temperature may be the most important
- limiting resources to NPP in unburned prairie
- 
-5) Interannual variability
- in forb biomass is more strongly related to precipitation compared to the dominant grasses. 
- 
-### Rationale 
-Forbs (C3 plants) have lower water use efficiency than C4 grasses.
 
+3) Different vegetation components (grasses and forbs) respond differently to burning and/or precipitation.
+
+  - Forbs (C3 plants) have lower water use efficiency than C4 grasses.
+  
 ## Study location
 
 The Konza Prairie Biological Station (KPBS), located in the Flint Hills of northeastern Kansas, USA (39°05’ N, 96°35’ W), maintains an interdisciplinary research program documenting the influences of fire, grazing, and climate on the faunal and floral ecology of the mesic prairie. KPBS was established in 1971 with land donated to The Nature Conservancy and is managed by the Division of Biology at Kansas State University. In 1981, KPBS joined the Long-Term Ecological Research (LTER) program funded by the NSF, as one of the original six field stations assembled to document temporal and spatial trends within and across biomes (www.lternet.edu).
@@ -101,7 +87,7 @@ These data are based on analyses and measurements conducted between 1984 and 199
 2. "Avg..Dry.Interval"
 3. "Max..Dry.Interval"
 3. "Mean.Montly.Precip"
-5. "CV.Precip"            
+5. "CV.Precip"  
 6. "SE.Precip"
 
 ## Data analysis
@@ -149,10 +135,8 @@ Make sure to fix your axis labels and make the y-axis start at 0 to avoid
 misleading your reader.
 
 Because there seems to be a general pattern in the data, average across all years
-to compare productivity among the three burn treatments using each sample as a replicate.
-
-First you'll need a summary table containing the average and standard error of productivity
-across all sites for each burn treament. Standard error is calculated as `sd(total_prod)/sqrt(n())`.
+to compare productivity among the three burn treatments using each sample as a replicate. Make a summary table containing the average and standard error of productivity
+across all sites for each burn treament. Standard error is calculated as `sd(total_prod)/sqrt(n())`. Plotting mean and standard error will allow you to compare results between treatments.
 
 ```{r}
 #mean across years and location
@@ -171,7 +155,7 @@ ggplot(total_prod3, aes(x=Burned, y=prod)) +
   geom_point() + ylim(c(0,500))
 ```
 
-Use an ANOVA to determine whether the three treatments are statistically different.
+Use an ANOVA to determine whether the three treatments are statistically different. Make sure to use the table with samples not your calculated means.
 
 ```{r}
 prodAnova <- lm(total_prod ~ Burned, data = total_prod)
@@ -179,7 +163,7 @@ anova(prodAnova)
 summary(prodAnova)$r.squared
 ```
 
-The treatments are statistically different but burning doesn't explain a lot of the variation among sites. Take a look at the overall variation with a boxplot. 
+The treatments are statistically different but burning doesn't explain a lot of the variation among sites. Take a look at the overall variation with a boxplot (use your total productivity table with samples and not mean/se information). 
 
 ```{r}
 ggplot(total_prod, aes(x=Burned, y=total_prod))+geom_boxplot()
@@ -187,7 +171,7 @@ ggplot(total_prod, aes(x=Burned, y=total_prod))+geom_boxplot()
 
 Does the pattern you see hold for both forbs and grasses separately? 
 You'll need an additional summary table similar to the one above, but with separate
-rows by type.
+rows by type generated from the original data.
 
 ```{r}
 #but differs for grass/forb
@@ -228,7 +212,11 @@ Because there's a lot of variation for any value of precipitation you can examin
 ```{r }
 ggplot(total_prod_rain, aes(Precip.g.season,total_prod,color=Location)) + 
   geom_point() + facet_grid(~Burned) + geom_smooth(method="lm")
+```
 
+Use a regression to examine the relationships you see in your graph. 
+
+```{r }
 summary(lm(total_prod ~ Precip.g.season + Location, data=total_prod_rain))
 ```
 
