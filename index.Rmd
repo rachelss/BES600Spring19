@@ -1,7 +1,7 @@
 ---
-title: "BIO 263 URI Fall 2018"
-subtitle: "Ecological Data Analysis"
-author: "Instructor: Rachel Schwartz"
+title: "BIO 594 URI Spring 2019"
+subtitle: "Special Topics in Biology: Shiny apps for effective scientific communication"
+author: "Instructors: Rachel Schwartz, Harrison Dekker, Jeff Hollister"
 output: 
   html_document:
     toc: true
