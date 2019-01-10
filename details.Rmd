@@ -13,12 +13,18 @@ knitr::opts_chunk$set(echo = FALSE)
 library(kableExtra)
 ```
 
-**Office Location**: CBLS 377
+**Instructors**:  
+Rachel Schwartz  
+CBLS 377  
+4-5404  
+rsschwartz@uri.edu 
 
-**Telephone**: 4-5404
+Harrison Dekker  
 
-**Email**: rsschwartz@uri.edu  
-Please note that I will do my best to respond promptly between 9-5 on weekdays.
+Jeff Hollister  
+
+
+Please note that instructors will do their best to respond promptly between 9-5 on weekdays.
 
 **Office Hours**: TBD   
 Please feel free to come by without an appointment during this time. To talk with me during other times please set up a meeting by email.
@@ -27,9 +33,9 @@ Please feel free to come by without an appointment during this time. To talk wit
 
 **Prerequisites**: Experience with R
 
-**Recommended texts**:
+**Recommended texts**:  
 Basic and advanced R:  
-* [Modern Dive](https://moderndive.com/)
+* [Modern Dive](https://moderndive.com/)  
 * [R For Data Science](https://r4ds.had.co.nz/)
 
 Data Viz:  
