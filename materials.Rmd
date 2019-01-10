@@ -12,11 +12,3 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Exercise 1](day1.html)  
-[Exercise 1 data](https://tinyurl.com/yc72k45p)
-
-[Exercise 2](day2.html)  
-
-[Exercise 3](day3.html)
-
-[Exercise 4](day4.html)

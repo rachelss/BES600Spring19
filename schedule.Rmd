@@ -16,73 +16,23 @@ library(kableExtra)
 
 ```{r, warning=FALSE}
 Week <- c(1:13)
-Ecology <- c(rep("Physical Environment", 5),
-             rep("Population Ecology", 4),
-             rep("Community Ecology", 3),
-             rep("Ecosystem Ecology",1))
-Topic <- c("Intro","Sampling", "Variation, Graphing", "Models", "Writeup",
-           "Variation, Graphing", "Statistics", "Models", "Writeup",
-           "Experimental design", "Data management", "Models",
-           "Wrapup")
-Data <- c(rep("Fish metabolism", 5), rep("Kelp Populations", 4),
-          rep("Aquatic invasives", 3), rep("Grassland productivity", 1))
+Topic <- c("Intro and Shiny","Shiny Basics", "Effective Outreach",
+             "Design Basics","Graphic Design","Class work time",
+             "Draft presentations","Class work time","Class work time",
+           "Class work time","Class work time",
+             "Presentations","Presentations")
+Speaker <- c("Instructors","Dekker", "Menezes", 
+             "Ferria", "Carubin","Instructors",
+             "Students","Instructors","Instructors",
+             "Instructors","Instructors",
+           "Students", "Students")
 Reading <- c("", "p. 1-16", "p. 23-43", "p. 539-547", "p. 149-167", 
              "p. 43-46", "p. 65-73, 96-107", "p. 73-80, 338-340", "p. 176-177",
              "p. 423-445", "p. 459-473", "p. 115-116", 
              "p. 503-512, 201-202")
  
-meetings <- cbind(Week, Ecology, Topic, Data, Reading)
+meetings <- cbind(Week, Topic, Speaker, Reading)
 
 kable(meetings, "html") %>%  
   kable_styling(bootstrap_options = c("striped", "hover", "responsive"))
-```
-
-## Data Content
-
-```{r, warning=FALSE}
-Content <- c("Introduction to ecological data",
-             "Using R, exploring data, sample variation, basic graphing",
-             "Correlation and regression",
-             "Summary statistics including mean and variance",
-             "Drawing conclusions from graphs and models",
-             "Variance, boxplots, median, quartiles, histogram",
-             "Comparing samples using a t-test",
-             "Drawing conclusions from boxplots and statistical tests",
-             "Experimental design",
-             "Standard error, standard deviation, and confidence intervals",
-             "Hypothesis testing",
-             "ANOVA",
-             "Conclusions from correlation, regression, and ANOVA")
-
-datacontent <- cbind(Week,Content)
-
-kable(datacontent, "html") %>%  
-  kable_styling(bootstrap_options = c("striped", "hover", "responsive"))
-```
-
-## Complementary ecology concepts
-
-Note: Concepts in ecology will be reinforced by analyzing ecological data. It is assumed that you have studied the underlying concepts in BIO 262.
-
-```{r}
-Week <- c(rep("1-5",3), rep("6-9",3), rep("10-12",3), rep("13",3))
-Item <- c("Question", "Concepts", "System")
-Content <- c("How do nutrient cycling rates of fish in lakes scale with body size and temperature?",
-             "Nutrient cycling, Allometry, Metabolism, Genetic variation",
-             "Aquatic ecosystems and fish (vertebrates)",
-             "How do primary productivity and growth rates of kelp vary among seasons, years, and sites?",
-             "Primary productivity, Population growth",
-             "Marine ecosystems and kelp (algae)",
-             "What are the effects of invasive species on a native aquatic community?",
-             "Food webs, Predation, Competition, Population dynamics, Direct and indirect effects",
-             "Aquatic ecosystems; Amphibians and fish (vertebrates), snails and Daphnia (invertebrates), algae",
-             "What are the effects of plant diversity on ecosystem productivity?",
-             "Diversity, Ecosystem function, Nutrient cycling",
-             "System: Grassland ecosystems and plants")
-
-ecology <- cbind(Week,Item,Content)
-
-kable(ecology, "html") %>%  
-  kable_styling(bootstrap_options = c("striped", "hover", "responsive")) %>%
-  collapse_rows(columns = 1)
 ```
