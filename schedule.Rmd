@@ -16,22 +16,24 @@ library(kableExtra)
 
 ```{r, warning=FALSE}
 Week <- c(1:13)
-Topic <- c("Intro and Shiny","Shiny Basics", "Effective Outreach",
-             "Design Basics","Graphic Design","Class work time",
+Date <- c("1/24", "1/31", "2/7", "2/14","2/21", "2/28", "3/7", "3/21",
+          "3/28", "4/4", "4/11","4/18", "4/25")
+Topic <- c("Intro and Shiny","Shiny Basics", "Design Basics","Effective Outreach",
+             "Graphic Design","Class work time",
              "Draft presentations","Class work time","Class work time",
            "Class work time","Class work time",
              "Presentations","Presentations")
-Speaker <- c("Instructors","Dekker", "Menezes", 
-             "Ferria", "Carubin","Instructors",
+Speaker <- c("Instructors","Dekker", "Ferria","Menezes", 
+              "Carubin","Instructors",
              "Students","Instructors","Instructors",
              "Instructors","Instructors",
            "Students", "Students")
-Reading <- c("", "p. 1-16", "p. 23-43", "p. 539-547", "p. 149-167", 
-             "p. 43-46", "p. 65-73, 96-107", "p. 73-80, 338-340", "p. 176-177",
-             "p. 423-445", "p. 459-473", "p. 115-116", 
-             "p. 503-512, 201-202")
+Reading <- c("DC Shiny Basics Ch. 1", "", "", "", "", 
+             "", "", "", "",
+             "", "", "", 
+             "")
  
-meetings <- cbind(Week, Topic, Speaker, Reading)
+meetings <- cbind(Week, Date, Topic, Speaker, Reading)
 
 kable(meetings, "html") %>%  
   kable_styling(bootstrap_options = c("striped", "hover", "responsive"))
