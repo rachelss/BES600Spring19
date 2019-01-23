@@ -20,9 +20,10 @@ CBLS 377
 rsschwartz@uri.edu 
 
 Harrison Dekker  
+hdekker@uri.edu
 
-Jeff Hollister  
-
+Jeff Hollister   
+jhollist@uri.edu 
 
 Please note that instructors will do their best to respond promptly between 9-5 on weekdays.
 
@@ -44,7 +45,8 @@ Data Viz:
 * [More references](https://datavizf18.classes.andrewheiss.com/reference/)
 
 **Other material**:  
-* [Data Camp Shiny Basics](https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny)
+* [Data Camp Shiny Basics](https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny)  
+* [RStudio Shiny Tutorials](http://shiny.rstudio.com/tutorial/)
 
 
 **Other equipment / material requirements**:
