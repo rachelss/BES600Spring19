@@ -1,7 +1,7 @@
-name: "BIO 594 URI Spring 2019"
+name: "BES 600 URI Spring 2019"
 output_dir: "."
 navbar:
-  title: "BIO 594 URI Spring 2019"
+  title: "BES 600 URI Spring 2019"
   left:
     - text: "Overview"
       href: index.html
@@ -11,3 +11,5 @@ navbar:
       href: policies.html
     - text: "Schedule"
       href: schedule.html
+    - text: "Daily materials"
+      href: materials.html
