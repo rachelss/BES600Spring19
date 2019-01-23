@@ -1,7 +1,7 @@
 ---
-title: "BIO 594 URI Spring 2019"
-subtitle: "Special Topics in Biology: Shiny apps for effective scientific communication"
-author: "Instructors: Rachel Schwartz, Harrison Dekker, Jeff Hollister"
+title: "BES 600 URI Spring 2019"
+subtitle: "Graduate Seminar in Biology & Env Sci (EMB)"
+author: "Instructor: Rachel Schwartz"
 output: 
   html_document:
     toc: true
@@ -13,15 +13,15 @@ output:
 
 ## Overview
 
-This course is intended to help you build your first Shiny app in R to communicate your research to the public and/or build a teaching tool for students. This course will consist of limited lecture time and extensive hands-on time. It is expected that prior to this course you have experience with R for data analysis.
+This seminar is intended to help you develop and practice your presentation skills.
 
 ## Course Goals
-At the end of this course students enrolled in BIO594: Shiny should...
+At the end of this course students enrolled in BES 600 should...
 
-* have a completed Shiny app
+* have developed and presented a talk / poster
 
 ## Student Learning Outcomes
-At the end of this course students enrolled in BIO594: Shiny should be able to...
+At the end of this course students enrolled in BES 600 should be able to...
 
-* build a basic Shiny app
 * understand some basic principles of data visualization and communication
+* use these skills to present their research
