@@ -23,7 +23,7 @@ Topic <- c("Planning", "Figures / Data viz","Slide design / posters",
              "Giving good talks","Laura / Amy",
              "Know your audience","Kevin / Aubree","Bonus day",
            "Cassie / Katie","Jillian / Erin",
-             "Matias / potluck")
+             "Matias / Kristina / potluck")
 
 meetings <- cbind(Week, Date, Topic)
 
