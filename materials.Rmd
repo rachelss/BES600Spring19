@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * [More references](https://datavizf18.classes.andrewheiss.com/reference/)
 
 **Day 3: Slide / poster design**  
-* [How to design a poster](https://www.animateyour.science/single-post/How-to-design-an-award-winning-conference-poster)
+* [How to design a poster](https://www.animateyour.science/single-post/How-to-design-an-award-winning-conference-poster)  
 * [The art of slide design](https://missgeeky.com/2017/08/04/the-art-of-slide-design/)
 
 **Day 4: Design tools**  
@@ -30,6 +30,6 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Infographic examples](https://www.animateyour.science/gallery)
 
 **Day 6: Giving good talks**  
-* [How to structure a talk](http://rajlaboratory.blogspot.com/2016/09/some-thoughts-on-how-to-structure-talk.html)
-* [Tell a story](https://www.animateyour.science/single-post/Tell-Them-a-Story-How-to-Avoid-the-Standard-Boring-Presentation)
+* [How to structure a talk](http://rajlaboratory.blogspot.com/2016/09/some-thoughts-on-how-to-structure-talk.html)  
+* [Tell a story](https://www.animateyour.science/single-post/Tell-Them-a-Story-How-to-Avoid-the-Standard-Boring-Presentation)  
 * [Presentation dos and don'ts](https://www.animateyour.science/single-post/Conference-Presentation-Dos-and-Donts-for-Scientists)
