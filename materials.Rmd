@@ -21,8 +21,10 @@ knitr::opts_chunk$set(echo = TRUE)
 * [More references](https://datavizf18.classes.andrewheiss.com/reference/)
 
 **Day 3: Slide / poster design**  
+* [The art of slide design](https://missgeeky.com/2017/08/04/the-art-of-slide-design/)  
 * [How to design a poster](https://www.animateyour.science/single-post/How-to-design-an-award-winning-conference-poster)  
-* [The art of slide design](https://missgeeky.com/2017/08/04/the-art-of-slide-design/)
+* [Class slides](howtomakeaposter.pdf)  
+* [Gig posters for scientists](https://www.flickr.com/photos/biologyposters/)
 
 **Day 4: Design tools**  
 
