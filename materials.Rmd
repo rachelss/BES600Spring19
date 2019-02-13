@@ -26,12 +26,18 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Class slides](howtomakeaposter.pdf)  
 * [Gig posters for scientists](https://www.flickr.com/photos/biologyposters/)
 
-**Day 4: Design tools**  
-
-**Day 5: Infographics**  
-* [Infographic examples](https://www.animateyour.science/gallery)
-
-**Day 6: Giving good talks**  
+**Day 4: Giving good talks**  
+* [Class slides](howtomakeapresentation.pdf)  
 * [How to structure a talk](http://rajlaboratory.blogspot.com/2016/09/some-thoughts-on-how-to-structure-talk.html)  
 * [Tell a story](https://www.animateyour.science/single-post/Tell-Them-a-Story-How-to-Avoid-the-Standard-Boring-Presentation)  
 * [Presentation dos and don'ts](https://www.animateyour.science/single-post/Conference-Presentation-Dos-and-Donts-for-Scientists)
+
+**Day 5: Infographics**  
+* [Comment on Alexa's poster](https://docs.google.com/document/d/1wy2KmbUG2BlL4sY6NtSI_oBzavxf5mCO41f-Ca2yi58/edit?usp=sharing)  
+* [Infographic examples](https://www.animateyour.science/gallery)
+
+**Day 6: Design tools**  
+
+
+
+
