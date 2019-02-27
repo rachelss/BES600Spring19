@@ -3,7 +3,7 @@ title: "Class Materials"
 output: 
   html_document:
     toc: true
-    toc_depth: 2
+    toc_depth: 3
     toc_float: true
     theme: cosmo
 ---
@@ -12,32 +12,35 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Day 1:**   
+## Day 1   
 [Planned activities and schedule](https://docs.google.com/document/d/1ejvs0rUF-ixUqaQmoCR4T3JgGvwPypIMFJdAJmPrIZ4/edit?usp=sharing)
 
-**Day 2: Data Viz and figures**  
+## Day 2: Data Viz and figures
 * [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/index.html)  
 * [How to pick your visualization / chart](https://www.data-to-viz.com/)  
 * [More references](https://datavizf18.classes.andrewheiss.com/reference/)
 
-**Day 3: Slide / poster design**  
+## Day 3: Slide / poster design
 * [The art of slide design](https://missgeeky.com/2017/08/04/the-art-of-slide-design/)  
 * [How to design a poster](https://www.animateyour.science/single-post/How-to-design-an-award-winning-conference-poster)  
 * [Class slides](howtomakeaposter.pdf)  
 * [Gig posters for scientists](https://www.flickr.com/photos/biologyposters/)
-
-**Day 4: Giving good talks**  
-* [Class slides](howtomakeapresentation.pdf)  
-* [How to structure a talk](http://rajlaboratory.blogspot.com/2016/09/some-thoughts-on-how-to-structure-talk.html)  
-* [Tell a story](https://www.animateyour.science/single-post/Tell-Them-a-Story-How-to-Avoid-the-Standard-Boring-Presentation)  
-* [Presentation dos and don'ts](https://www.animateyour.science/single-post/Conference-Presentation-Dos-and-Donts-for-Scientists)
-
-**Day 5: Infographics**  
-* [Comment on Alexa's poster](https://docs.google.com/document/d/1wy2KmbUG2BlL4sY6NtSI_oBzavxf5mCO41f-Ca2yi58/edit?usp=sharing)  
 * [Infographic examples](https://www.animateyour.science/gallery)
 
-**Day 6: Design tools**  
+## Day 4: Giving good talks
+* [How to structure a talk](http://rajlaboratory.blogspot.com/2016/09/some-thoughts-on-how-to-structure-talk.html)  
+* [Class slides](howtomakeapresentation.pdf)  
+* [Tell a story](https://www.animateyour.science/single-post/Tell-Them-a-Story-How-to-Avoid-the-Standard-Boring-Presentation)  
+* [Presentation dos and don'ts](https://www.animateyour.science/single-post/Conference-Presentation-Dos-and-Donts-for-Scientists)  
+* [Making Powerpoint accessible](https://business.tutsplus.com/tutorials/accessible-powerpoint-presentations--cms-30018)  
+* [Accessible presentations](https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf)
 
+## Day 5: Alexa  
+* [Comment on Alexa's poster](https://docs.google.com/document/d/1wy2KmbUG2BlL4sY6NtSI_oBzavxf5mCO41f-Ca2yi58/edit?usp=sharing)  
+
+## Day 6: Messaging
+* [Message Box tool](https://www.compassscicomm.org/the-message-box-workbook)
+* [Slides](https://docs.google.com/presentation/d/17T47-He9lkwAwXW9TrXx--ZUiTYBU0iFqJI_QuU8ruY/edit?usp=sharing)
 
 
 
