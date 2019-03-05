@@ -33,14 +33,19 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Tell a story](https://www.animateyour.science/single-post/Tell-Them-a-Story-How-to-Avoid-the-Standard-Boring-Presentation)  
 * [Presentation dos and don'ts](https://www.animateyour.science/single-post/Conference-Presentation-Dos-and-Donts-for-Scientists)  
 * [Making Powerpoint accessible](https://business.tutsplus.com/tutorials/accessible-powerpoint-presentations--cms-30018)  
-* [Accessible presentations](https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf)
+* [Accessible presentations](https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf)  
+* [Ten Simple Rules for Making Good Oral Presentations](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030077)
 
 ## Day 5: Alexa  
 * [Comment on Alexa's poster](https://docs.google.com/document/d/1wy2KmbUG2BlL4sY6NtSI_oBzavxf5mCO41f-Ca2yi58/edit?usp=sharing)  
 
 ## Day 6: Messaging
-* [Message Box tool](https://www.compassscicomm.org/the-message-box-workbook)
-* [Slides](https://docs.google.com/presentation/d/17T47-He9lkwAwXW9TrXx--ZUiTYBU0iFqJI_QuU8ruY/edit?usp=sharing)
+* [Message Box tool](https://www.compassscicomm.org/the-message-box-workbook)  
+* [Slides](https://docs.google.com/presentation/d/17T47-He9lkwAwXW9TrXx--ZUiTYBU0iFqJI_QuU8ruY/edit?usp=sharing)  
+* [Presentation response prompts](https://docs.google.com/document/d/1MVw4Hx0CAHyfmNY2IC8WEo0uHi94FUd6z2ShL_qHW_g/edit?usp=sharing)
 
+## Day 7: Laura / Amy
+* [Comment on Laura's presentation](https://docs.google.com/document/d/1NjWsWACXvojtxA6dlO4n4lZXG5nR0ao3V-2y4Xi7zIA/edit?usp=sharing)  
+* [Comment on Amy's presentation](https://docs.google.com/document/d/1is9T0ebCmLdHZfrXD2oXN1QCW-g0pr2zdFpNFIq2-yk/edit?usp=sharing)
 
 
