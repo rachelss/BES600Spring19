@@ -25,6 +25,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * [How to design a poster](https://www.animateyour.science/single-post/How-to-design-an-award-winning-conference-poster)  
 * [Class slides](howtomakeaposter.pdf)  
 * [Gig posters for scientists](https://www.flickr.com/photos/biologyposters/)
+* [Alternative poster design](https://www.youtube.com/watch?v=1RwJbhkCA58&feature=youtu.be)
+*[Poster as a prop](https://medium.com/@jjmerelo/make-your-poster-presentation-awesome-97d021258d78)
 * [Infographic examples](https://www.animateyour.science/gallery)
 
 ## Day 4: Giving good talks
@@ -52,5 +54,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Aubree](https://docs.google.com/document/d/1RhsSDmUsNo8M3LtjeUzY6-askxRHZSUyvDGu0QKHtOA/edit?usp=sharing)  
 * [Kevin](https://docs.google.com/document/d/1e3olQRMUFw6dY61ulSVDAjO0k1Xh1mDGts5c3XqGRKE/edit?usp=sharing)
 
+## Day 9: Cassie / Katie
+* [Cassie](https://docs.google.com/document/d/16tpG_x0OzTCv5sRwln9Q3SnkBxQZGPvwNeZnttA7eCU/edit?usp=sharing)  
+* [Katie](https://docs.google.com/document/d/1E8-i9JL-O8KtxGMOLyA9CDh_s-xNcqSRpBnDdQmfpZ4/edit?usp=sharing)
 
 
