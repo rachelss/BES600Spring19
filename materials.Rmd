@@ -56,6 +56,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Day 9: Cassie / Katie
 * [Cassie](https://docs.google.com/document/d/16tpG_x0OzTCv5sRwln9Q3SnkBxQZGPvwNeZnttA7eCU/edit?usp=sharing)  
-* [Katie](https://docs.google.com/document/d/1E8-i9JL-O8KtxGMOLyA9CDh_s-xNcqSRpBnDdQmfpZ4/edit?usp=sharing)
+* [Katie](https://docs.google.com/document/d/1tUzacYVeFFjZDWDEeapZt7Ru26aWyGCci-P8juSkydc/edit?usp=sharing)
 
 
