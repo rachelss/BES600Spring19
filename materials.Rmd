@@ -59,7 +59,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Katie](https://docs.google.com/document/d/1tUzacYVeFFjZDWDEeapZt7Ru26aWyGCci-P8juSkydc/edit?usp=sharing)
 
 ## Day 10: Jillian / Erin  
-[Jillian](https://docs.google.com/document/d/1-ky9CK8GAw7UbUAJLi1anDdPlq5NPBianLadtmQphF0/edit?usp=sharing)  
-[Erin](https://docs.google.com/document/d/10FpvW6uTd6vqzKwCjDC4WfI07YsTjJxwvwRtOv3BguE/edit?usp=sharing)
+* [Jillian](https://docs.google.com/document/d/1-ky9CK8GAw7UbUAJLi1anDdPlq5NPBianLadtmQphF0/edit?usp=sharing)  
+* [Erin](https://docs.google.com/document/d/10FpvW6uTd6vqzKwCjDC4WfI07YsTjJxwvwRtOv3BguE/edit?usp=sharing)
 
 
