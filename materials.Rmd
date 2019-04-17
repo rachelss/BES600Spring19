@@ -54,8 +54,12 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Aubree](https://docs.google.com/document/d/1RhsSDmUsNo8M3LtjeUzY6-askxRHZSUyvDGu0QKHtOA/edit?usp=sharing)  
 * [Kevin](https://docs.google.com/document/d/1e3olQRMUFw6dY61ulSVDAjO0k1Xh1mDGts5c3XqGRKE/edit?usp=sharing)
 
-## Day 9: Cassie / Katie
+## Day 9: Cassie / Katie  
 * [Cassie](https://docs.google.com/document/d/16tpG_x0OzTCv5sRwln9Q3SnkBxQZGPvwNeZnttA7eCU/edit?usp=sharing)  
 * [Katie](https://docs.google.com/document/d/1tUzacYVeFFjZDWDEeapZt7Ru26aWyGCci-P8juSkydc/edit?usp=sharing)
+
+## Day 10: Jillian / Erin  
+[Jillian](https://docs.google.com/document/d/1-ky9CK8GAw7UbUAJLi1anDdPlq5NPBianLadtmQphF0/edit?usp=sharing)  
+[Erin](https://docs.google.com/document/d/10FpvW6uTd6vqzKwCjDC4WfI07YsTjJxwvwRtOv3BguE/edit?usp=sharing)
 
 
