@@ -64,4 +64,5 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Day 11: Matias / Kristina  
 * [Matias](https://docs.google.com/document/d/1AWAovieRHcw1cBosPneVnNH4oC24kTZzvl32nlvxzfk/edit?usp=sharing)  
+* [Kristina](https://docs.google.com/document/d/1ie-nMGnDys1s9IwsL7kncEXHMgepY3zogBoGV2mtqMo/edit?usp=sharing)
 
